@@ -61,6 +61,9 @@ btnAdd.addEventListener("click", function () {
   adicionarProdutoNaLista(produto, quantidade, false, false);
   salvarListaNoLocalStorage();
 
+  document.getElementById("produto").value = "";
+  document.getElementById("quantidade").value = "";
+
   Toastify({
     text: "✅ Produto adicionado com sucesso!",
     duration: 3000,
